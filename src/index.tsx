@@ -1,4 +1,4 @@
-import * as constant from './constant';
+import * as common_constant from './constant';
 import * as common_types from './types/_common';
 //
 import { useBool } from './hooks/useBool';
@@ -21,7 +21,7 @@ import { waitingToDoLast } from './utils/waitingToDoLast';
 
 //
 export {
-    constant,
+    common_constant,
     common_types,
     // hooks
     //

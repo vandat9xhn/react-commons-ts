@@ -1,14 +1,14 @@
 import { useRef } from 'react';
 //
-import { MouseTouchEventType, ReactMouseTouchEventType } from '../types/_common';
+import { MouseTouchFuncType, MouseTouchEventType } from '../types/_common';
 
 // -----
 
 //
 interface useMouseDownToWindowUpProps {
-    handleDown?: <ElmType>(e: ReactMouseTouchEventType<ElmType>) => void;
-    handleMove?: (e: MouseTouchEventType) => void;
-    handleEnd?: (e: MouseTouchEventType) => void;
+    handleDown?: MouseTouchFuncType;
+    handleMove?: MouseTouchFuncType;
+    handleEnd?: MouseTouchFuncType;
 
     detectEndTouch?: (e: TouchEvent) => boolean;
     detectStartTouch?: (e: TouchEvent) => boolean;
@@ -46,7 +46,7 @@ export function useMouseDownToWindowUp({
     // ------
 
     //
-    function onDown<ElmType>(e: ReactMouseTouchEventType<ElmType>) {
+    function onDown(e: MouseTouchEventType) {
         handleDown(e);
 
         if (!ref_func_move.current) {
