@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import { ExampleComponent } from 'react-commons-ts'
-import 'react-commons-ts/dist/index.css'
+import { unitNumber } from 'react-commons-ts';
 
+//
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+    return (
+        <div>
+            <div>{unitNumber({ num: 1500 })}</div>
+        </div>
+    );
+};
 
-export default App
+export default App;

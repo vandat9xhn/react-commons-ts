@@ -13,18 +13,31 @@ npm install --save react-commons-ts
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+Some constant, common types, hooks and utils:
 
-import MyComponent from 'react-commons-ts'
-import 'react-commons-ts/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+constant,
+common_types,
+// hooks
+//
+useMounted,
+useBool,
+useForceUpdate,
+useDisplayBlockToNone,
+useMouseDownToWindowUp,
+// utils
+//
+formatLocalDateString,
+formatLocalDateTimeString,
+getTimeAndUnit,
+unitTime,
+unitTimeJustNow,
+//
+formatNum,
+unitNumber,
+//
+waitingToDoLast
 ```
 
 ## License
 
-MIT © [vandat9xhn](https://github.com/vandat9xhn)
+MIT ©
