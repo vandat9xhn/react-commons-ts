@@ -2,6 +2,7 @@ import * as common_constant from './constant';
 import * as common_types from './types/_common';
 //
 import { useBool } from './hooks/useBool';
+import { useHold } from './hooks/useHold';
 import { useDisplayBlockToNone } from './hooks/useDisplayBlockToNone';
 import { useForceUpdate } from './hooks/useForceUpdate';
 import { useMounted } from './hooks/useMounted';
@@ -28,6 +29,8 @@ export {
     useMounted,
     useBool,
     useForceUpdate,
+    useHold,
+    // 
     useDisplayBlockToNone,
     useMouseDownToWindowUp,
     // utils
