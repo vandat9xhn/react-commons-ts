@@ -2,10 +2,12 @@ import * as common_constant from './constant';
 import * as common_types from './types/_common';
 //
 import { useBool } from './hooks/useBool';
-import { useHold } from './hooks/useHold';
-import { useDisplayBlockToNone } from './hooks/useDisplayBlockToNone';
-import { useForceUpdate } from './hooks/useForceUpdate';
 import { useMounted } from './hooks/useMounted';
+import { useHold } from './hooks/useHold';
+import { useForceUpdate } from './hooks/useForceUpdate';
+
+import { useDisplayBlockToNone } from './hooks/useDisplayBlockToNone';
+import { useToggleDataset } from './hooks/useToggleDataset';
 import { useMouseDownToWindowUp } from './hooks/useMouseDownToWindowUp';
 //
 import {
@@ -19,6 +21,8 @@ import { formatNum } from './utils/formatNum';
 import { unitNumber } from './utils/unitNumber';
 
 import { waitingToDoLast } from './utils/waitingToDoLast';
+import { toggleDataset } from './utils/toggleDataset';
+import { getClassModuleCss } from './utils/getClassModuleCss';
 
 //
 export {
@@ -30,9 +34,10 @@ export {
     useBool,
     useForceUpdate,
     useHold,
-    // 
+    //
     useDisplayBlockToNone,
     useMouseDownToWindowUp,
+    useToggleDataset,
     // utils
     //
     formatLocalDateString,
@@ -44,5 +49,7 @@ export {
     formatNum,
     unitNumber,
     //
-    waitingToDoLast
+    getClassModuleCss,
+    waitingToDoLast,
+    toggleDataset
 };
