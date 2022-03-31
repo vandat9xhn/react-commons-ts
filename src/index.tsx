@@ -14,15 +14,15 @@ import {
     formatLocalDateString,
     formatLocalDateTimeString
 } from './utils/formatDate';
-
 import { getTimeAndUnit, unitTime, unitTimeJustNow } from './utils/unitTime';
-
 import { formatNum } from './utils/formatNum';
 import { unitNumber } from './utils/unitNumber';
 
 import { waitingToDoLast } from './utils/waitingToDoLast';
 import { toggleDataset } from './utils/toggleDataset';
 import { getClassModuleCss } from './utils/getClassModuleCss';
+
+import { loadFile, loadFiles } from './utils/loadFiles';
 
 //
 export {
@@ -45,11 +45,13 @@ export {
     getTimeAndUnit,
     unitTime,
     unitTimeJustNow,
-    //
     formatNum,
     unitNumber,
     //
     getClassModuleCss,
     waitingToDoLast,
-    toggleDataset
+    toggleDataset,
+    //
+    loadFile,
+    loadFiles
 };
